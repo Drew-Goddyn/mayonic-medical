@@ -1,0 +1,11 @@
+# GitHub Pages specific configuration
+# Include this with the normal _config.yml by using:
+# bundle exec jekyll serve --config _config.yml,_config_github_pages.yml
+
+# Update with your GitHub username and repository name
+baseurl: "/mayonic-medical" # The subpath of your site, e.g. /blog
+url: "https://drew-goddyn.github.io" # The base hostname & protocol for your site
+
+# Build settings for GitHub Pages
+future: false
+jailed: false 
