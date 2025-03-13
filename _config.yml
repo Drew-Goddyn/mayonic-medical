@@ -1,0 +1,78 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Mayonic Medical
+email: info@mayonicmedical.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Mayonic Medical is a specialized weight management and obesity care clinic dedicated to helping
+  patients achieve and maintain a healthy weight through personalized treatment plans.
+  Our team of experienced healthcare professionals is committed to your long-term success
+  and improved quality of life.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: mayonicmedical
+github_username:  mayonicmedical
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - about.markdown
+  - services.md
+  - team.md
+  - testimonials.md
+  - blog.md
+  - contact.md
+
+# Custom variables
+phone: "(555) 123-4567"
+address: "123 Healthcare Avenue, Medical District, City, State 12345"
+hours:
+  monday: "8:00 AM - 6:00 PM"
+  tuesday: "8:00 AM - 6:00 PM"
+  wednesday: "8:00 AM - 6:00 PM"
+  thursday: "8:00 AM - 6:00 PM"
+  friday: "8:00 AM - 5:00 PM"
+  saturday: "9:00 AM - 1:00 PM"
+  sunday: "Closed"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

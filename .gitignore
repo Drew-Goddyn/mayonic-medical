@@ -1,0 +1,22 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# Ruby environment
+.ruby-version
+.ruby-gemset
+
+# macOS files
+.DS_Store
+
+# Environment variables
+.env
+
+# Log files
+*.log
