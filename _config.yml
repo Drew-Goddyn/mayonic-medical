@@ -25,8 +25,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   patients achieve and maintain a healthy weight through personalized treatment plans.
   Our team of experienced healthcare professionals is committed to your long-term success
   and improved quality of life.
-baseurl: "" # For local development - use /mayonic-medical for GitHub Pages
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/mayonic-medical" # the subpath of your site, e.g. /blog
+url: "https://drew-goddyn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mayonicmedical
 github_username:  mayonicmedical
 
