@@ -15,7 +15,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
@@ -31,9 +31,17 @@ jobs:
       run: |
         echo "Building site with baseurl: /mayonic-medical"
         JEKYLL_ENV=production bundle exec jekyll build --baseurl "/mayonic-medical" --verbose
-    
+        
+    - name: Verify generated files
+      run: |
+        echo "Verifying generated files:"
+        ls -la _site/assets/
+        ls -la _site/assets/images/
+        cat _site/assets/main.css | grep -n "background-image" || echo "No background-image found in CSS"
+        
+    # Upload artifact explicitly using a newer version that has clear dependencies
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
+      uses: actions/upload-pages-artifact@v3
       with:
         path: "_site/"
 
@@ -49,4 +57,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2 
+        uses: actions/deploy-pages@v4 
