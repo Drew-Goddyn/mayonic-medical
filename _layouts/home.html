@@ -3,9 +3,12 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
+  {% comment %}
+  <!-- We're removing the page title display to avoid duplication with hero content -->
+  {%- if page.title and page.show_title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
+  {% endcomment %}
 
   {{ content }}
 
