@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Mayonic Medical
+title: About
 permalink: /about/
 ---
 
